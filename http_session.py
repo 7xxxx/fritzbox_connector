@@ -10,7 +10,7 @@ class HTTPSession:
         self.sid = self.compute_sid_md5()
 
     def compute_sid_md5(self):
-        """ Current FritzOS supports only MD5 Challenge Response, but will be changed soon to PKDF.
+        """ Current FritzOS supports only MD5 Challenge Response, but will be changed soon to PBKDF2.
         """
 
         # get current challenge
